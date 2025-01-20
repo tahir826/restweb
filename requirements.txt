@@ -8,3 +8,4 @@ pathlib
 python-multipart
 passlib[bcrypt]
 pydantic[email]
+--upgrade pydantic
