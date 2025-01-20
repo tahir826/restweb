@@ -2,6 +2,7 @@ fastapi
 uvicorn
 asyncpg
 datetime
-python[email]
+aiosmtplib
+email-validator
 asyncpg
-passlib
+pathlib
