@@ -9,3 +9,4 @@ pathlib
 python-multipart
 passlib[bcrypt]
 pydantic[email]
+python-multipart
