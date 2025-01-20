@@ -6,3 +6,6 @@ aiosmtplib
 email-validator
 asyncpg
 pathlib
+python-multipart
+passlib[bcrypt]
+pydantic[email]
