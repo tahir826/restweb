@@ -166,9 +166,10 @@ async def shutdown():
     await app.state.db_pool.close()
 
 
+
 @app.get("/")
-async def root():
-    return {"message": "Welcome to the Hotel Backend API."}
+def read_root():
+    return {"message": "Hello World"}
 
 
 # User Routes
