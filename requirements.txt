@@ -4,9 +4,7 @@ asyncpg
 datetime
 aiosmtplib
 email-validator
-asyncpg
 pathlib
 python-multipart
 passlib[bcrypt]
 pydantic[email]
-python-multipart
