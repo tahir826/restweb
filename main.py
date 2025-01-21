@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File
+from asgi_tools.middleware import ASGIMiddleware  # Ensure middlewares are compatible
 from datetime import datetime, timezone
 from pydantic import BaseModel, EmailStr, validator
 from passlib.context import CryptContext

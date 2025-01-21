@@ -1,10 +1,8 @@
 fastapi
 uvicorn
+httpx
 asyncpg
-datetime
-aiosmtplib
-email-validator
-pathlib
-python-multipart
+pydantic
 passlib[bcrypt]
-pydantic[email]
+python-dotenv
+asgi-tools
