@@ -7,6 +7,22 @@ import asyncpg
 import uuid
 import os
 from pathlib import Path
+from fastapi.middleware.cors import CORSMiddleware
+
+# Add CORS middleware for external access (optional but recommended)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Update with specific domains in production
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Expose the ASGI app to Vercel
+import os
+if "VERCEL" in os.environ:
+    import uvicorn
+    app = app  # This is required on Vercel
 
 # Database Connection String
 DB_CONNECTION_STRING = "postgres://avnadmin:AVNS_fEFK89LGFyg9d597Eo5@hotelweb-hotelweb.c.aivencloud.com:27791/defaultdb?sslmode=require"
